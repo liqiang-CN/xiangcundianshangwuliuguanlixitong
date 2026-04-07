@@ -10,7 +10,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # 阶段2：用轻量JDK镜像运行
-FROM eclipse-temurin:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
 # 从builder阶段复制生成的jar包
 COPY --from=builder /app/target/*.jar app.jar
