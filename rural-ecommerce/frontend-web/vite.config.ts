@@ -42,12 +42,12 @@ export default defineConfig({
     allowedHosts: ['.cpolar.cn', '.vip.cpolar.cn', '.trycloudflare.com',],
     proxy: {
       '/api': {
-        target: 'https://xiangcundianshangwuliuguanlixitong-production.up.railway.app:8080',
+        target: 'https://xiangcundianshangwuliuguanlixitong-production.up.railway.app',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
       '/uploads': {
-        target: 'https://xiangcundianshangwuliuguanlixitong-production.up.railway.app:8080',
+        target: 'https://xiangcundianshangwuliuguanlixitong-production.up.railway.app',
         changeOrigin: true,
       },
     },
