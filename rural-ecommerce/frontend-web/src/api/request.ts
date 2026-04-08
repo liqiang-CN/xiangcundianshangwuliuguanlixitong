@@ -3,7 +3,7 @@ import { ElMessage } from 'element-plus'
 import { useUserStore } from '@/stores/user'
 
 const request: AxiosInstance = axios.create({
-  baseURL: 'https://xiangcundianshangwuliuguanlixitong-production.up.railway.app:8080',
+  baseURL: 'https://xiangcundianshangwuliuguanlixitong-production.up.railway.app',
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json'
